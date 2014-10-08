@@ -1,0 +1,61 @@
+#rock paper scissors lab
+count = 0
+import random
+print ('I want to play a game of rock paper scissors shoot')
+print ('Would you like to play?[y/n]')
+cchoice = random.randint(1,3)
+answer = input()
+while answer == 'y':
+    
+    print ('rock paper scissors shoot')
+    print ('Type: "rock" "paper" "scissors"')
+    uchoice = input()
+    print('you have chosen', uchoice)
+    if cchoice == 1:
+        print('The computer chose rock')
+    elif cchoice == 2:
+        cchoice == "The computer chose paper"
+    else:
+        cchoice == "The computer chose scissors"
+    
+    if uchoice == "rock" and cchoice ==1 :
+        count = count + 1
+        print('this results in a draw, do you want to play again?[y/n] You played', count, 'time(s)')
+        answer = input()
+    elif uchoice == "rock" and cchoice == 2:
+        count = count + 1
+        print('Paper covers rock, you lost. Would you like to play again?[y/n] You played', count, 'time(s)')
+        answer = input()
+    elif uchoice == "rock" and cchoice == 3:
+        count = count + 1
+        print('Rock crushes scissors, you won. Would you like to play again?[y/n] You played', count, 'time(s)')
+        answer = input()
+
+    elif uchoice == 'paper' and cchoice == 2 :
+        count = count + 1
+        print('this results in a draw, do you want to play again?[y/n] You played', count, 'time(s)')
+        answer = input()
+    elif uchoice == "paper" and cchoice == 1:
+        count = count + 1
+        print('Paper covers rock, you won. Would you like to play again?[y/n] You played', count, 'time(s)')
+        answer = input()
+    elif uchoice == "paper" and cchoice == 3:
+        count = count + 1
+        print('Scissors cuts paper, you lost. Would you like to play again?[y/n] You played', count, 'time(s)')
+        answer = input()
+
+    elif uchoice == "scissors" and cchoice == 3:
+        count = count + 1
+        print('this results in a draw, do you want to play again?[y/n] You played', count, 'time(s)')
+        answer = input()
+    elif uchoice == "scissors" and cchoice == 1:
+        count = count + 1
+        print('Rock crushes scissors, you lost. Would you like to play again?[y/n] You played', count, 'time(s)')
+        answer = input()
+    elif uchoice == "scissors" and cchoice == 2:
+        count = count + 1
+        print('Scissors cut paper, you won. You have won. Would you like to play again?[y/n] You played', count, 'time(s)')
+        answer = input()
+print('Goodbye')
+
+  
